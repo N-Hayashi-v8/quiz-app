@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一般常識クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <header class="quiz-header">
+      <h1>一般常識クイズ</h1>
+      <p id="progress" class="progress"></p>
+    </header>
+
+    <main id="quiz-screen" class="quiz-screen">
+      <p id="question" class="question"></p>
+      <div id="choices" class="choices"></div>
+      <p id="feedback" class="feedback"></p>
+      <button id="next-btn" class="btn next-btn" hidden>次の問題へ</button>
+    </main>
+
+    <section id="result-screen" class="result-screen" hidden>
+      <h2>結果発表</h2>
+      <p id="score-text" class="score-text"></p>
+      <div class="chart-wrap">
+        <canvas id="score-chart"></canvas>
+      </div>
+      <button id="retry-btn" class="btn">もう一度挑戦する</button>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
